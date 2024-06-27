@@ -1,1 +1,4 @@
+SHELL_SESSIONS_DISABLE=1
+
 export PATH="$HOME/Code/scripts:$PATH"
+
