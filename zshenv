@@ -1,4 +1,8 @@
 SHELL_SESSIONS_DISABLE=1
 
-export PATH="$HOME/Code/scripts:$PATH"
+export CODE="$HOME/Code"
+
+export PATH="$CODE/scripts:$PATH"
+
+export DOTFILES="$CODE/github.com/jdhamlik/dotfiles"
 

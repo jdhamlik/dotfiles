@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+# Update Homebrew-managed packages.
+brew update
+brew upgrade
+brew autoremove
+
+# Store the installed packages for installation on new machines.
+brew leaves | tr '\n' ' ' > "$DOTFILES/homebrew_packages.txt"
+
+# Update installed languages and runtimes.
+mise upgrade
+
+# Update Neovim plugins.
+nvim --headless "+Lazy! update" +qa
+
