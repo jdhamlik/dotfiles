@@ -13,6 +13,7 @@ CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
 ln -si "$DOTFILES/alacritty" "$CONFIG_HOME"
 ln -si "$DOTFILES/mise" "$CONFIG_HOME"
 ln -si "$DOTFILES/nvim" "$CONFIG_HOME"
+ln -si "$DOTFILES/zellij" "$CONFIG_HOME"
 
 ln -si "$DOTFILES/zshenv" "$HOME/.zshenv"
 ln -si "$DOTFILES/zshrc" "$HOME/.zshrc"
