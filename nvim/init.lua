@@ -35,16 +35,19 @@ vim.o.updatetime = 250
 vim.o.splitright = true
 vim.o.splitbelow = true
 
+vim.o.ignorecase = true
+vim.o.smartcase = true
 vim.o.inccommand = "split"
-
 vim.o.hlsearch = true
 
-vim.keymap.set("n", "<esc>", "<cmd>nohlsearch<cr>")
+local bind = vim.keymap.set
+
+bind("n", "<esc>", "<cmd>nohlsearch<cr>")
 
 vim.filetype.add({ extension = { templ = "templ" } })
 
-vim.keymap.set("n", "<A-K>", "<cmd>m .-2<cr>==")
-vim.keymap.set("n", "<A-J>", "<cmd>m .+1<cr>==")
+bind("n", "<A-K>", "<cmd>m .-2<cr>==")
+bind("n", "<A-J>", "<cmd>m .+1<cr>==")
 
 -- Required for Obsidian.
 vim.o.conceallevel = 2
@@ -83,8 +86,8 @@ vim.opt.rtp:prepend(lazypath)
 
 local lazy = require("lazy")
 
-vim.keymap.set("n", "<leader>pm", lazy.home)
-vim.keymap.set("n", "<leader>pu", lazy.update)
+bind("n", "<leader>pm", lazy.home)
+bind("n", "<leader>pu", lazy.update)
 
 lazy.setup("plugins", {
 	defaults = {

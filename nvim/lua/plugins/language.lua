@@ -25,6 +25,8 @@ return {
 			-- Set up standard LSPs.
 			lsp.gopls.setup(opts)
 			lsp.lua_ls.setup(opts)
+			lsp.templ.setup(opts)
+			lsp.tsserver.setup(opts)
 		end,
 	},
 

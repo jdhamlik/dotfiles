@@ -1,1 +1,1 @@
-bat btop fd fzf gh git gnupg jq llvm lua-language-server luarocks mise neovim ninja openconnect pnpm ripgrep stylua wget zellij zoxide 
+bat btop cmake fd fzf gh git git-extras gnupg jq llvm lua-language-server luarocks mise neovim ninja openconnect pandoc pnpm ripgrep stylua wget zellij zoxide 
